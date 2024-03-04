@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS - Herança</title>
+        
+        <style>
+            article {
+                font-size: 20px;
+                color: blueviolet;
+            }
+            article section article section p{
+                font-size: 30px;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <article>
+            <section>
+                <p>
+                    Filha
+                </p>
+                <article>
+                    <section>
+                        <p>Neto da Filha</p>
+                    </section>
+                </article>
+            </section>
+            <section>
+                <p>
+                    Filho
+                </p>
+                <article>
+                    <section>
+                        <p>Neto da Filho</p>
+                    </section>
+                </article>
+            </section>
+        </article>
+    </body>
+</html>
