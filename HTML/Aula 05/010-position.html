@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Position - Static, Relative, Absolute e Fixed</title>
+        <style>
+            .container {
+                background: violet;
+                color: #fff;
+                margin: 40px 0;
+                height: 150px;
+
+                /* Static */
+                /* position: static; */
+
+                /* Relative */
+                /* position: relative; */
+            }
+            .filho-relative {
+                background: green;
+                position: relative;
+                top: 10px;
+                left: 20px;
+                bottom: 10px;
+                right: 20px;
+
+                width: 120px;
+            }
+
+            .filho-absolute {
+                background: green;
+                position: absolute;
+                top: 100px;
+                right: 0px;
+            }
+
+            .fixed {
+                font-size: 50px;
+                position: fixed;
+
+                bottom: 20px;
+                right: -120px;
+                z-index: 9999;  /* Colocar posicionamento nas divs */ 
+                                /*Quanto maior o valor, mais para frente fica*/
+                /*text-align: center; - Add this line to center the text*/
+            }            
+        </style>
+    </head>
+
+    <body>
+        <div class="fixed">
+            <img src="Imagens/pokedesk.png" alt="Pokedesk" style="width: 50%;">
+
+        </div>
+        <div class="container">
+            Texto 1
+
+            <div class="filho-relative">
+                Texto Relative
+            </div>
+
+            Texto 3
+        </div>
+
+        <div class="container">
+            Texto 1
+
+            <div class="filho-absolute">
+                Texto Absolute
+            </div>
+
+            Texto 3
+        </div>
+
+        <div class="container">
+            Texto 1
+
+            <div class="filho-relative">
+                Texto Relative
+            </div>
+
+            Texto 3
+        </div>
+
+        <div class="container">
+            Texto 1
+
+            <div class="filho-absolute">
+                Texto Absolute
+            </div>
+
+            Texto 3
+        </div>
+
+        <div class="container">
+            Texto 1
+
+            <div class="filho-relative">
+                Texto Relative
+            </div>
+
+            Texto 3
+        </div>
+
+        <div class="container">
+            Texto 1
+
+            <div class="filho-absolute">
+                Texto Absolute
+            </div>
+
+            Texto 3
+        </div>
+    </body>
+</html>
