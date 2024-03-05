@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shadown</title>
+        <style>
+            div{
+                padding: 10px;
+                background: rgb(182, 182, 222);
+                /* usar RGBA nas cores para sombras mais suaves */
+                text-align: center;
+                line-height: 100px;
+                transition: all 0.5s;
+            }
+
+            div:hover{
+                bottom: 5px;
+                box-shadow: 10px 10px 10px #000; /* Sombras nos elementos */
+                text-shadow: 0 10px 0 #ffffff; /* Sombras nos textos */
+                transform: scale(1.5);
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Texto 1
+        </div>
+    </body>
+</html>
